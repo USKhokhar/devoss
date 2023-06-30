@@ -6,3 +6,7 @@ author_github: "USKhokhar"
 level: "Beginner"
 description: "This guide takes you through contributing to devoss.tech and making your first open source contribution."
 ---
+
+```python
+print("Work in progress...")
+```

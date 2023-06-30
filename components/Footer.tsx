@@ -14,7 +14,7 @@ const Footer = () => {
                     </Link>
                     . </p>
                 <p className="text-right">Want to contribute? Checkout the {" "}
-                    <Link href={"https://github.com/USKhokhar/devoss/#contributing"} target="_blank" className="underline">
+                    <Link href={"https://github.com/USKhokhar/devoss/blob/master/CONTRIBUTING.md"} target="_blank" className="underline">
                         Contribution Guidelines
                     </Link>
                     .
