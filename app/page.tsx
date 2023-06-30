@@ -1,8 +1,6 @@
 import Hero from '@/components/Hero'
-import TopicSheet from '@/components/TopicSheet'
 import { ScrollArea } from '@/components/ui/scroll-area'
-import { compareDesc, format, parseISO } from 'date-fns'
-import { allPosts, Post } from 'contentlayer/generated'
+import { allPosts} from 'contentlayer/generated'
 import Link from "next/link"
 import CardComponent from '@/components/Card'
 
