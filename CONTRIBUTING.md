@@ -1,158 +1,156 @@
-# CONTRIBUTION GUIDELINES
----
+CONTRIBUTION GUIDELINES
+=======================
 
 Thank you for considering contributing to **devoss.tech**! This guide will provide you with the necessary information and instructions to make the contribution process smooth and effective.
 
-### Overview
+Overview
 ---
 
-**devoss.tech** is an open-source project that aims to provide a collection of project guides, blogs and documentation on various tech paradigms. What makes blogging and writing documentations on **devoss.tech** different than other major platforms is that every blog you submit is your contribution to open-source. devoss.tech makes it extremely simple and easy for beginners to get started with open source.
+**devoss.tech** is an open-source project that aims to provide a collection of project guides, blogs, and documentation on various tech paradigms. By contributing to **devoss.tech**, you can help improve existing guides, add new project ideas, enhance documentation, and engage in the open-source community, fostering a better generation of programmers and tech geeks.
 
-Not just that, by contributing, you can help improve existing guides, add new project ideas, enhance documentation, and engage in the open-source community. All in all, contributing towards fostering a better generation of programmers and tech geeks!
-
-### Types of contributions
+Types of Contributions
 ---
 
-You can contribute to devoss.tech in following ways: 
-- **Documentation/Blog:** If you are someone who is just getting started with open-source, or someone who loves to document their projects and knowledge, then we highly ecourage you to submit your blogs and documentations to devoss.tech to help learners!
-- **Code:** Submitting bug fixes, implementing new features, or improving existing functionality.
-- **Bug Reports:** Reporting bugs by creating detailed issue reports with clear steps to reproduce.
+You can contribute to devoss.tech in the following ways:
 
-### Requirements
+*   **Documentation/Blog:** Submit blogs and documentations to help learners and share your knowledge.
+*   **Code:** Submit bug fixes, implement new features, or improve existing functionality.
+*   **Bug Reports:** Report bugs by creating detailed issue reports with clear steps to reproduce.
+
+Requirements
 ---
 
-- Git
-- Node
-- Npm
+To contribute to **devoss.tech**, you will need the following:
 
-*yup, that's it* ✌ 
+*   Github Account
+*   Git
+*   Node
+*   NPM
 
-
-### Contribution Process
+Contribution Process
 ---
 
-*to get a better idea of contribution to devoss.tech we recommend you to read [Getting Started with devoss](https://www.devoss.tech/posts/getting-started-with-devoss)*
+To contribute to **devoss.tech**, follow the steps below:
 
-#### Step 1 : Forking 🍴 
+### Step 1: Fork the Repository
 
-- Fork the [devoss repository](https://github.com/USKhokhar/devoss) to your GitHub account.
+1.  Fork the [devoss repository](https://github.com/USKhokhar/devoss) to your GitHub account.
 
-#### Step 2 : Cloning 👬
+### Step 2: Clone the Repository
 
-- Clone (or download) your forked repo to your local machine. In your terminal, run:
+1.  Clone (or download) your forked repo to your local machine by running the following command in your terminal:
+    
+    
+    ```bash
+    git clone https://github.com/{YOUR_GITHUB_USERNAME}/devoss.git
+    ```
+    
 
-```bash
-git clone https://github.com/{YOUR_GITHUB_USERNAME}/devoss.git 
-```
+### Step 3: Set Up and Install Dependencies
 
-- The above command will clone the repository in your local machine. It will create a **devoss** directory.
+1.  Navigate to the `devoss` directory in your terminal:
+    
+    ```bash
+    cd devoss
+    ```
+    
+2.  Install all the required dependencies by running the following command:
+    
+    ```bash
+    npm install
+    ```
+    
 
-### Step 3 : Setting Up & Installing Deps ⚛
+### Step 4: Create a New Branch
 
-- Since devoss is built using [Nextjs](https://nextjs.org), [Tailwind](https://tailwindcss.com/) and [Shadcn/ui](https://ui.shadcn.com), you need to install and setup all the dependencies which are required to run devoss locally. Luckily, it's just a matter of two lines of code. In your terminal, run:
+1.  Create a new branch for your contribution. It is recommended to use a separate branch for each new feature, bug fix, or contribution. Run the following command to create a new branch:
+    
+    ```bash
+    git checkout -b my-branch-name
+    ```
+    
+    Replace `my-branch-name` with a suitable branch name, such as `your-username` or `your-changes-or-contributions`.
 
-```bash
-# To move to the devoss directory
-cd devoss
+### Step 5: Make Contributions
 
-# To install all the required dependencies
-npm install
-```
+If you are contributing to the codebase or directly improving the UI or other features, make the desired changes and skip to step 6.
 
-### Step 4 : Starting out
-- It is best practice to create a separate branch for each new feature, bug fix, or contribution. This keeps the changes isolated and makes it easier to manage and review the code.
+If you are contributing in the form of documentation and blogs, follow these steps:
 
-- To create a new branch, run:
+1.  Install the `devoss-cli` globally on your system by running the following command:
+    
+    ```bash
+    npm install -g devoss-cli
+    ```
+    
+2.  Once installed, run the following command in the `devoss` directory:
+    
+    ```bash
+    npx devoss-contribute
+    ```
+    
+    Answer the prompted questions to create the frontmatter for your markdown file.
+    
+3.  After running the command, a markdown file with the proper frontmatter will be created. Use your preferred code editor to start writing the content in the file.
+    
 
-```bash
-git checkout -b my-branch-name
-```
+### Step 6: Test Your Changes
 
-> replace `my-branch-name` which a suitable branch name. Our suggestion would be something like `your_username --> your-changes-or-contributions`
+1.  To test your changes locally, run the following command in the root directory of the project:
+    
+    ```bash
+    npm run dev
+    ```
+    
+    This will start the development server with your changes on `localhost:3000`. Verify all the changes you made and test other functionalities.
 
-### Step 5 : Contributing ⚒
+### Step 7: Commit and Push Your Changes
 
-- If you are someone who is contributing to the codebase, or directly improving the UI or other features. Then you can do those changes accordingly and skip this step and go directly to step 5. (After doing changes, of course).
+1.  Stage all your changes by running the following command in the root directory of the project:
+    
+    ```bash
+    git add .
+    ```
+    
+2.  Commit your changes with an appropriate commit message, similar to the branch name:
+    
+    ```bash
+    git commit
+    ```
 
-- If you are contributing in form of documentation and blog, then follow the following steps carefully. 
+    This will open your default editor (Vim, Nano, etc). We suggest you to be as descriptive about your commits as you can. Use proper heading and body for commits.
+    
+3.  Push your changes to your remote repository using the following command:
 
-> devoss has its own CLI tool to automate your task for writing down the frontmatter of your markdown file. It does so to make your contributing process easier so that you can focus more on the content of your document.
+    ```bash
+    git push -u origin my-branch-name
+    ```
+    
+    Replace `my-branch-name` with the name of your branch.
+    
 
-- In your terminal, run:
+### Step 8: Create a Pull Request
 
+1.  Go to your repository on GitHub in the browser and click on "Compare and pull requests".
+    
+2.  Add a title and description to your pull request, explaining your changes and the purpose of your contribution.
+    
+3.  Submit the pull request and wait for it to be reviewed and merged.
+    
 
-```bash
-npm install -g devoss-cli 
-```
-> Installing the cli globally is a one-time process, unless there are some new updates to it. If there are no updates
+Congratulations on your successful contribution towards open source and fostering a healthy learning environment in the tech community!
 
-- Once you install the devoss-cli globally on your system, you can run the following command: 
-
-```bash
-npx devoss-contribute
-```
-
-> Make sure you run the `devoss-contribute` command in the `devoss` directory.
-
-- After running the contribution command, you will be prompted with certain questions, answer them correctly.
-
-> For more detailed structure of contribution process,read [Getting Started with devoss](https://www.devoss.tech/posts/getting-started-with-devoss)
-
-- Once you are done answering, you should be prompted with a success message in green text. If yes, then that means your file/doc has been successfully created that too with proper front matter. 
-
-- Now you can start writing your content in your markdown file. You can use shortcuts of your code editor to find your file with ease. For example, if you are using VScode, then after successfully running the command, press  <kbd>CTRL</kbd>  <kbd>+</kbd>  <kbd>P</kbd> and search your file by the title you gave it.
-
-### Step 6 : Almost done 🛫 
-
-- Once you are done with implementing all the desired changes, test them locally by running:
-
-```bash
-npm run dev
-``` 
-
-- This will start the dev server with your changes on `localhost:3000`. Check all the changes you made, and all other functionalities.
-
-> Also run `npm run build` in order to test any other errors which might come during deployment.
-
-- Once you are done checking everything, it is time to get your code to the main codebase. And the first step towards that is staging all your changes. In the root directory of the project, run:
-
-```bash
-# stage all your changes 
-git add .
-
-# commit your changes with an appropriate commit message, similar to the branch name
-
-git commit -m "your-commit-message"
-
-```
-
-- Once all your changes are staged and committed, it is time to push your work to your remote repository. To do so, run:
-
-```bash
-# Push the changes to your branch
-git push -u origin my-branch-name 
-```
-
-### Step 7 : Finishing up 💅
-
-- Finally, go to your repository in the browser and click on `compare and pull requests. Then add a title and description to your pull request that explains your precious effort.
-
-- A pull request allows you to propose your changes to the original repository. It initiates a discussion and review process before merging the changes.
-
-> Provide a descriptive title and detailed description of your changes.
-
-- Submit the pull request and wait for it to get approved and merged.
-
-Once that's done... Congratulations on your successful contribution towards open-source and fostering a healthy learning environment in the tech community.
-
+Miscellaneous
 ---
-### MISC.
 
 Remember to regularly sync your forked repository with the original repository to stay up to date with any changes made by others. To sync your fork, use the following command:
 
 ```bash
-git remote add upstream https://github.com/USKhokhar/devoss.git
-git fetch upstream
-git checkout master
+git remote add upstream https://github.com/USKhokhar/devoss.git 
+
+git fetch upstream 
+
+git checkout master 
+
 git merge upstream/master
 ```

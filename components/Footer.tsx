@@ -12,7 +12,7 @@ const Footer = () => {
                     <Link href={"https://uskhokhar.me"} target="_blank" className="underline">
                         U.S.Khokhar
                     </Link>
-                    . </p>
+                </p>
                 <p className="text-right">Want to contribute? Checkout the {" "}
                     <Link href={"https://github.com/USKhokhar/devoss/blob/master/CONTRIBUTING.md"} target="_blank" className="underline">
                         Contribution Guidelines
