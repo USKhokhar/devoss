@@ -20,8 +20,9 @@ In this, I will take you through creating a new post (this post 🙃).
 
 - Clone (or download) your forked repo to your local machine.
 
-![Clone Image](https://i.imgur.com/URg6eku.png)
-![Clone CLI Image](https://i.imgur.com/ImSi5ag.png)
+```bash
+git clone https://github.com/{YOUR_GITHUB_USERNAME}/devoss.git 
+```
 
 > You can now open the devoss repository on your local machine.
 
