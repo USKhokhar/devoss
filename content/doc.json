@@ -3,5 +3,10 @@
     "title": "Getting Started With Devoss",
     "href": "/posts/getting-started-with-devoss",
     "level": "beginner"
+  },
+  {
+    "title": "Progressive Web Apps",
+    "href": "/posts/progressive-web-apps",
+    "level": "Beginner"
   }
 ]
