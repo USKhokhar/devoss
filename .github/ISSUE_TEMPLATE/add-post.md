@@ -2,7 +2,7 @@
 name: Add Post
 about: Add a new post to devoss
 title: Add New Post --> [ Post Title ]
-labels: documentation, good first issue
+labels: documentation, enhancement, good first issue
 assignees: ''
 
 ---
