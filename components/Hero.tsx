@@ -1,3 +1,4 @@
+import { SearchBox } from "./SearchBox"
 import { Badge } from "./ui/badge"
 
 // API
@@ -32,8 +33,18 @@ const Hero = async () => {
                 An open-source collection of project guides, documentations, and blogs on various techs curated by developers, for developers!
             </p>
 
+            <div className="md:hidden block">
+                <SearchBox />
+            </div>
+
             <Badge className="md:hidden block w-fit mx-auto justify-center self-center" variant={"outline"}>
-                Scoll Down
+                Scoll Down 
+            </Badge>
+            <Badge className="md:block hidden w-fit mx-auto justify-center self-center py-2 px-3" variant={"outline"}>
+                Search posts with...
+                <kbd className="ml-2 bg-accent/50 p-1">
+                    ⌘ / CTRL + K
+                </kbd>
             </Badge>
         </article>
     )

@@ -4,6 +4,7 @@ import { Button } from "./ui/button"
 
 import ThemeToggle from "./ThemeToggle"
 import InfoDialog from "./InfoDialog"
+import { SearchBox } from "./SearchBox"
 
 
 const Header = () => {
@@ -20,6 +21,11 @@ const Header = () => {
 
             {/* all required navigation links like --> theme toggle, github repo, search, etc */}
             <nav className="flex justify-between items-center gap-5">
+                {/* Search Box */}
+                <div className="md:block hidden">
+                    <SearchBox />
+                </div>
+
                 {/* Info icon to open information modal on click */}
                 <InfoDialog />
 
