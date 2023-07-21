@@ -7,7 +7,7 @@ level: Beginner
 description: This guide takes you through contributing to devoss.tech and making your first open source contribution.
 ---
 
-In order to get a complete overview of contributing to devoss.tech, I suggest you to read the [CONTRUBUTION GUIDELINES](https://github.com/USKhokhar/devoss/blob/master/CONTRIBUTING.md) before continuing with this post. This guide is specifically for contributing in form of posts.
+In order to get a complete overview of contributing to devoss.tech, I suggest you to read the [CONTRIBUTION GUIDELINES](https://github.com/USKhokhar/devoss/blob/master/CONTRIBUTING.md) before continuing with this post. This guide is specifically for contributing in form of posts.
 
 In this, I will take you through creating a new post (this post 🙃).
 
@@ -90,5 +90,5 @@ Now you can simply start adding the content of your post/guide. You can see the 
 
 Once you are done with post setup, review everything and you are good-to-go to make contribution!
 
-Read the [CONTRUBUTION GUIDELINES](https://github.com/USKhokhar/devoss/blob/master/CONTRIBUTING.md) for more details on contribution.
+Read the [CONTRIBUTION GUIDELINES](https://github.com/USKhokhar/devoss/blob/master/CONTRIBUTING.md) for more details on contribution.
 
