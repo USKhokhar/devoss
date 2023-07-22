@@ -33,7 +33,7 @@ const PostLayout = ({ params }: { params: { slug: string } }) => {
             </aside>
             <Card className="w-[95vw] mx-auto max-w-3xl md:border border-0 px-5 py-3 md:my-8 my-4">
                 <CardHeader className="p-0 md:flex-row flex-col justify-between">
-                    <div className="grid md:border-r-2 md:pr-1 md:pb-0 md:border-b-0 border-b-2 pb-1">
+                    <div className="grid md:pr-1 md:pb-0 md:border-b-0 border-b-2 pb-1">
                         <CardTitle className="scroll-m-20 text-2xl font-semibold tracking-tight">{post.title}</CardTitle>
                         <CardDescription>{post.description}</CardDescription>
                     </div>
@@ -42,11 +42,14 @@ const PostLayout = ({ params }: { params: { slug: string } }) => {
                         <Button variant={"link"} className="flex gap-2 justify-end items-center capitalize">
                             <BarChart size={18} />{post.level}
                         </Button>
-                        <Button asChild variant={"link"}>
-                            <Link href={`${post.project_repo}`} target="_blank" className="flex capitalize justify-between items-center gap-2">
-                                <Github size={18} />Code
-                            </Link>
-                        </Button>
+                        {
+                            post.project_repo && 
+                            <Button asChild variant={"link"}>
+                                <Link href={`${post.project_repo}`} target="_blank" className="flex capitalize justify-between items-center gap-2">
+                                    <Github size={18} />Code
+                                </Link>
+                            </Button>
+                        }
                     </div>
                 </CardHeader>
                 <Separator />

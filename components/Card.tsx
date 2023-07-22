@@ -27,7 +27,7 @@ const CardComponent = ({ title, description, author, level, slug }: CardProps) =
   return (
     <Card className={`${slug ? "cursor-pointer hover:bg-muted" : "pt-2 rounded-none border-r-0 border-l-0 border-t-0 border-b-2"} w-full mx-auto flex flex-col justify-center my-1.5 items-center`}>
       <CardHeader className={`${!description && "w-full flex-row justify-between items-center"}`}>
-        <CardTitle className="capitalize md:text-lg text-sm">{title}</CardTitle>
+        <CardTitle className={` ${(title === 'Getting Started with devoss') && "grd-txt"} capitalize md:text-lg text-sm`}>{title}</CardTitle>
         {show(author)}
         {show(level)}
         {

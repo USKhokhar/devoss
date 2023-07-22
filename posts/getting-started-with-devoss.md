@@ -7,88 +7,101 @@ level: Beginner
 description: This guide takes you through contributing to devoss.tech and making your first open source contribution.
 ---
 
-In order to get a complete overview of contributing to devoss.tech, I suggest you to read the [CONTRIBUTION GUIDELINES](https://github.com/USKhokhar/devoss/blob/master/CONTRIBUTING.md) before continuing with this post. This guide is specifically for contributing in form of posts.
+Creating a New Post
+=================================================
 
-In this, I will take you through creating a new post (this post 🙃).
+> Before proceeding with this post, I recommend reading the [CONTRIBUTION GUIDELINES](https://github.com/USKhokhar/devoss/blob/master/CONTRIBUTING.md) to get a complete overview of contributing to devoss.tech. This guide is specifically for contributing in the form of posts.
 
-### Setting Up Locally ⬇️
----
 
-- Fork the [devoss repository](https://github.com/USKhokhar/devoss) to your GitHub account.
+Setting Up Locally ⬇️
+---------------------
+
+To contribute to devoss.tech, follow these steps to set up the project on your local machine:
+
+1.  Fork the [devoss repository](https://github.com/USKhokhar/devoss) to your GitHub account.
 
 ![Fork Image](https://i.imgur.com/ISX7B3x.png)
 
-- Clone (or download) your forked repo to your local machine.
+2.  Clone (or download) your forked repo to your local machine.
 
-```bash
-git clone https://github.com/{YOUR_GITHUB_USERNAME}/devoss.git 
 ```
+git clone https://github.com/{YOUR_GITHUB_USERNAME}/devoss.git
+``` 
 
 > You can now open the devoss repository on your local machine.
 
-- Open terminal in same path as the project, and run following commands⚛️:
+3.  Open the terminal in the same path as the project, and run the following commands⚛️:
 
-```bash
-# To move to the devoss directory
-cd devoss
+```
+# Move to the devoss directory 
+cd devoss  
 
-# To install all the required dependencies
-npm install
+# Install all the required dependencies 
+npm install  
 
-# To run it on your local server
+# Run the project on your local server 
 npm run dev
 ```
 
-> Now you can access your app on localhost:3000
+Now you can access your app at [localhost:3000](http://localhost:3000).
 
-### Setting Up New Post
----
+Setting Up New Post
+-------------------
 
-To set up a new post for contribution, devoss uses a Command Line for automating the entire process and making it easy for contributors.
+To add a new post to devoss.tech, it is recommended to first create an issue. Follow these steps:
 
-- In order to create a new post, open a new terminal session in **devoss directory**. 
+1.  Go to the issues section of the devoss repository:
 
-- In the new terminal session, run: 
+![ISSUE](https://i.imgur.com/Dy8SJvd.png)
 
-```bash
+2.  Choose the **ADD POST** issue, and fill out the details as asked:
+
+![ADD POST](https://i.imgur.com/BkLqxQC.png)
+
+![ISSUE FORM](https://i.imgur.com/gp2PpHZ.png)
+
+3.  After creating the issue, you will be assigned to it, and then you can continue with the following steps to add your post.
+    
+4.  To set up a new post for contribution, devoss uses a Command Line Interface (CLI) to automate the entire process and make it easy for contributors.
+    
+5.  In order to create a new post, open a new terminal session in the **devoss directory**.
+    
+6.  In the new terminal session, run:
+    
+
+```
 npm install -g devoss-cli
 ```
 
-- This will set up the devoss-cli locally, after that run: 
+This will set up the devoss-cli locally. After that, run:
 
-```bash
-npx devoss-contribute
 ```
+npx devoss-contribute
+``` 
 
-- This will prompt you with certain questions regarding your project. Something like this: 
+This will prompt you with certain questions regarding your post. Something like this:
 
 ![CONTRIBUTION CLI](https://i.imgur.com/7TikXFD.png)
 
-- Once you have filled all your prompts, your post file is created in the ```/post``` directory. Your terminal should look like this: 
+7.  Once you have filled in all the prompts, your post file will be created in the `/post` directory. Your terminal should look like this:
 
 ![CONTRIBUTION CLI](https://i.imgur.com/OuumxWB.png)
 
-### Finishing Up 🧹
----
+Finishing Up 🧹
+---------------
 
-Your post is created in a markdown file under ```/post``` directory. For example, if you gave your post a title of ```Example Post For Devoss```, your file will be ```/post/example-post-for-devoss.md```.
+Your post is now created in a markdown file under the `/post` directory. For example, if you gave your post the title of "Example Post For Devoss," your file will be /post/example-post-for-devoss.md`.
 
-> If you are using VSCode, I will suggest you to use the shortcut <kbd>CTRL + P</kbd>, and then access your file.
+> If you are using VSCode, I suggest using the shortcut <kbd>CTRL + P</kbd> to access your file.
 
-The frontmatter of your markdown file is already managed by the responses given in the command line. (You can change the frontmatter accordingly, if needed).
+The frontmatter of your markdown file is already managed by the responses given in the command line. You can change the frontmatter accordingly if needed.
 
 This is how your file should look like:
 
 ![POST INTRO](https://i.imgur.com/wf64Rm8.png)
 
-> Notice the file path in the above image.
+Now you can simply start adding the content of your post/guide. You can see the changes being reflected at [localhost:3000](http://localhost:3000).
 
-Now you can simply start adding the content of your post/guide. You can see the changes being reflected in localhost:3000
+Once you are done with the post setup, review everything, and you are good-to-go to make your contribution!
 
-
----
-
-Once you are done with post setup, review everything and you are good-to-go to make contribution!
-
-Read the [CONTRIBUTION GUIDELINES](https://github.com/USKhokhar/devoss/blob/master/CONTRIBUTING.md) for more details on contribution.
-
+For more details on contribution, read the [CONTRIBUTION GUIDELINES](https://github.com/USKhokhar/devoss/blob/master/CONTRIBUTING.md). Happy writing and contributing!
