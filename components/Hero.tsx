@@ -2,11 +2,11 @@ import { SearchBox } from "./SearchBox"
 import { Badge } from "./ui/badge"
 
 // API
-const jokesapi_dev_api = "https://v2.jokeapi.dev/joke/Programming?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single"
+const jokesApi = "https://v2.jokeapi.dev/joke/Programming?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single"
 
 // function to fetch prgramming jokes from jokesapi.dev
 const getProgrammingJokes = async () => {
-    const api_response = await fetch(jokesapi_dev_api, { next: { revalidate: 60 } })
+    const api_response = await fetch(jokesApi, { next: { revalidate: 60 } })
     const data = await api_response.json()
 
     return data
@@ -32,10 +32,6 @@ const Hero = async () => {
             <p className="text-xl text-muted-foreground">
                 An open-source collection of project guides, documentations, and blogs on various techs curated by developers, for developers!
             </p>
-
-            <div className="md:hidden block">
-                <SearchBox />
-            </div>
 
             <Badge className="md:hidden block w-fit mx-auto justify-center self-center" variant={"outline"}>
                 Scoll Down 

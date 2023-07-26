@@ -41,15 +41,15 @@ export function SearchBox({ ...props }: DialogProps) {
       <Button
         variant="outline"
         className={cn(
-          "relative w-[50vw] justify-between px-2 items-center text-sm text-muted-foreground md:w-32 lg:w-56"
+          "relative w-8 h-8 md:h-fit text-accent-foreground bg-transparent hover:bg-transparent border-none md:border md:border-input md:bg-background md:hover:bg-accent rounded-full md:rounded-md justify-between md:px-4 items-center text-sm md:text-muted-foreground md:w-32 lg:w-56"
         )}
         onClick={() => setOpen(true)}
         {...props}
       >
         <span className="hidden lg:inline-flex">Search Posts...</span>
-        <span className="inline-flex lg:hidden">Search...</span>
+        <span className="hidden md:inline-flex lg:hidden">Search...</span>
         <kbd>
-            <FileSearch2 className="md:mr-2 h-5 w-5" />
+            <FileSearch2 className="mr-2 h-6 w-6 md:h-5 md:w-5" />
         </kbd>
       </Button>
       <CommandDialog open={open} onOpenChange={setOpen}>
