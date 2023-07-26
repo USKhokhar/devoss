@@ -22,9 +22,7 @@ const Header = () => {
             {/* all required navigation links like --> theme toggle, github repo, search, etc */}
             <nav className="flex justify-between items-center gap-5">
                 {/* Search Box */}
-                <div className="md:block hidden">
-                    <SearchBox />
-                </div>
+                <SearchBox />
 
                 {/* Info icon to open information modal on click */}
                 <InfoDialog />
