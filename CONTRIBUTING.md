@@ -75,7 +75,7 @@ To contribute to **devoss.tech**, follow the steps below:
 
 If you are contributing to the codebase or directly improving the UI or other features, make the desired changes and skip to step 6.
 
-If you are contributing in the form of documentation and blogs, follow these steps:
+If you are contributing in the form of documentation and blogs, follow these steps and for a more detailed overview of contributing as posts, refer the [Getting Started with devoss](https://www.devoss.tech/posts/getting-started-with-devoss) post, which takes you to detailed, step-by-step procedure of adding/editing posts on devoss:
 
 1.  Install the `devoss-cli` globally on your system by running the following command:
     
