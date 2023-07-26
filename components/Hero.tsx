@@ -30,7 +30,7 @@ const Hero = async () => {
             </fieldset>
 
             <p className="text-xl text-muted-foreground">
-                An open-source collection of project guides, documentations, and blogs on various techs curated by developers, for developers!
+                An open-source collection of blogs, project guides, and documentations on various techs curated by developers, for developers!
             </p>
 
             <Badge className="md:hidden block w-fit mx-auto justify-center self-center" variant={"outline"}>
