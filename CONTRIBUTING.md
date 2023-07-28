@@ -77,19 +77,13 @@ If you are contributing to the codebase or directly improving the UI or other fe
 
 If you are contributing in the form of documentation and blogs, follow these steps and for a more detailed overview of contributing as posts, refer the [Getting Started with devoss](https://www.devoss.tech/posts/getting-started-with-devoss) post, which takes you to detailed, step-by-step procedure of adding/editing posts on devoss:
 
-1.  Install the `devoss-cli` globally on your system by running the following command:
-    
+1. In the root of your local `devoss` directory, open the terminal and run:
+
     ```bash
-    npm install -g devoss-cli
-    ```
-    
-2.  Once installed, run the following command in the `devoss` directory:
-    
-    ```bash
-    npx devoss-contribute
-    ```
-    
-    Answer the prompted questions to create the frontmatter for your markdown file.
+    npm run new-post
+    ```    
+
+2. Answer the prompted questions to create the frontmatter for your markdown file.
     
 3.  After running the command, a markdown file with the proper frontmatter will be created. Use your preferred code editor to start writing the content in the file.
     
@@ -109,7 +103,7 @@ If you are contributing in the form of documentation and blogs, follow these ste
 1.  Stage all your changes by running the following command in the root directory of the project:
     
     ```bash
-    git add .
+    git add -A
     ```
     
 2.  Commit your changes with an appropriate commit message, similar to the branch name:

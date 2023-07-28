@@ -69,17 +69,11 @@ To add a new post to devoss.tech, it is recommended to first create an issue. Fo
 6.  In the new terminal session, run:
     
 
-```
-npm install -g devoss-cli
-```
+    ```
+    npm run new-post
+    ```
 
-This will set up the devoss-cli locally. After that, run:
-
-```
-npx devoss-contribute
-``` 
-
-This will prompt you with certain questions regarding your post. Something like this:
+    This will prompt you with certain questions regarding your post. Something like this:
 
 ![CONTRIBUTION CLI](https://i.imgur.com/7TikXFD.png)
 
